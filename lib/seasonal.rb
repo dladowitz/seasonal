@@ -1,6 +1,6 @@
 require "seasonal/version"
 
-module Seasons
+module Seasonal
   CA = {winter: ["Apple", "Orange", "Avacado"], spring: ["Pear", "Bannana", "Lemon"], summer: ["Cherry", "Watermelon", "Nectarine"], fall: ["Pear", "Bannana", "Lemon"]}.freeze
   TX = {winter: ["Apple", "Orange", "Avacado"], spring: ["Pear", "Bannana", "Lemon"], summer: ["Cherry", "Orange", "Nectarine"], fall: ["Pear", "Bannana", "Lemon"]}.freeze
 
@@ -25,6 +25,6 @@ module Seasons
   end
 
   def string_to_constant(string)
-    Seasons.const_get(string)
+    Seasonal.const_get(string)
   end
 end
